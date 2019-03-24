@@ -1,5 +1,5 @@
 {
-   "abstract" : "Blah blah blah",
+   "abstract" : "Plugin to Gzip Mojolicious responses",
    "author" : [
       "Adam Hopkins <srchulo@cpan.org>"
    ],
@@ -37,6 +37,7 @@
       },
       "runtime" : {
          "requires" : {
+            "Mojolicious" : "0",
             "perl" : "5.008005"
          }
       },
@@ -47,7 +48,21 @@
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/srchulo/Mojolicious-Plugin-Gzip/issues"
+      },
+      "homepage" : "https://github.com/srchulo/Mojolicious-Plugin-Gzip",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/srchulo/Mojolicious-Plugin-Gzip.git",
+         "web" : "https://github.com/srchulo/Mojolicious-Plugin-Gzip"
+      }
+   },
    "version" : "0.01",
+   "x_contributors" : [
+      "Adam Hopkins <violapiratejunky@gmail.com>"
+   ],
    "x_generated_by_perl" : "v5.28.0",
    "x_serialization_backend" : "Cpanel::JSON::XS version 4.08",
    "x_static_install" : 1
