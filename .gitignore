@@ -1,0 +1,7 @@
+/Mojolicious-Plugin-Gzip-*
+/.build
+/_build*
+/Build
+MYMETA.*
+!META.json
+/.prove
