@@ -1,6 +1,8 @@
 Revision history for Mojolicious-Plugin-Gzip
 
 {{$NEXT}}
+
+0.02  2019-03-24 22:33:20 CDT
         - Require Mojolicious 8.02.
         - Add Test::Exception to required dependencies.
 
