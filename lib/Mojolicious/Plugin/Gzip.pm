@@ -1,5 +1,5 @@
 package Mojolicious::Plugin::Gzip;
-use Mojo::Base 'Mojolicious::Plugin::Config';
+use Mojo::Base 'Mojolicious::Plugin';
 use Mojo::Util qw/gzip/;
 use Scalar::Util qw/reftype/;
 
@@ -48,7 +48,6 @@ sub register {
 
         my $zipped_body = gzip $body;
         $res->body($zipped_body);
-        $res->fix_headers;
         $res->headers->content_length(length $zipped_body);
         $res->headers->append(Vary => 'Accept-Encoding');
         $res->headers->content_encoding('gzip');
