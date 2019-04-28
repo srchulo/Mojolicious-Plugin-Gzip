@@ -26,7 +26,7 @@ Mojolicious::Plugin::Gzip - Plugin to Gzip Mojolicious responses
 
 This module can be inefficient for large static files. It loads the entire file into memory and then gzips it, resulting in both the original file and
 the gzipped one in memory at once. By default, [Mojolicious](https://metacpan.org/pod/Mojolicious) serves static files from disk, which is much more memory efficient. For static files, you may want
-to compress them ahead of time or use something like a reverse proxy with [Nginx](https://www.nginx.com/) to serve your static files or a service like
+to compress them ahead of time and use something like [Mojolicious::Static::Role::Compressed](https://metacpan.org/pod/Mojolicious::Static::Role::Compressed) to serve them, or a service like
 [Cloudlfare](https://www.cloudflare.com/), which will compress files for you. For gzipping dynamic content, you should consider using ["compress" in Mojolicious::Renderer](https://metacpan.org/pod/Mojolicious::Renderer#compress)
 instead.
 
