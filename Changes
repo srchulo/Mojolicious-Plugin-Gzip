@@ -1,6 +1,8 @@
 Revision history for Mojolicious-Plugin-Gzip
 
 {{$NEXT}}
+        - Make Test::Exception a test dependency.
+        - Update documentation to suggest using Mojolicious::Static::Role::Compressed to serve compressed files.
 
 0.03  2019-03-25 22:07:04 CDT
         - Inherit from Mojolicious::Plugin instead of Mojolicious::Plugin::Config.
